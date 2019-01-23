@@ -3,10 +3,10 @@
 #include<time.h>
 
 /*
-*	simple program to encrypt a file using a substitution cipher
+*	simple program to encrypt a file using a monoalphabetic substitution cipher
 *	I know that disk encryption utilities are available
-*	this program can secure a file whose contents I want to hide
-*	simple substitution cipher is used (easily broken)
+*	this program can secure a file whose contents are to be hidden
+*	simple substitution cipher is used
 */
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -24,7 +24,7 @@ void analyse(FILE *stream)
 	/*
 	*	array to store frequencies of characers
 	*	static arrays initialized to zeros
-	*	number of occurrences of 'item' are 'frequency[item]''
+	*	number of occurrences of 'item' are 'frequency[item]'
 	*/
 	int frequency[256] = {0};
 
